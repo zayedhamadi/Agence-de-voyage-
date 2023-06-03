@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>{% block title %}home!{% endblock %}</title>
+{% block stylesheets %}
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+  crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="{{ asset('assets/homme.css') }}"></head> 
+</head>     
+{{ include('include/header.html.twig') }}
+{% endblock %}
+<body id="page-top">
+
+<div class="container-fluid">
+    <div class="row jumbotron">
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+            <h1 class="lead"><b>Tunisie Booking</b> 1ère agence de voyage en ligne</h1>
+            <p style=" margin-right: 20px;"> &nbsp;&nbsp;  Nos meilleurs Voyage en Tunisie
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                </svg>
+            </p>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+            <a class="nav-link">
+                
+            </a>
+        </div>
+    </div>
+</div>
+ <br> <br> <br>
+<div class="about_section layout_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6"> <br> <br> 
+                <img class="img-fluid" src="{{ asset('images/agence-de-communication.jpg') }}" alt="" />
+
+            </div>
+            <div class="col-md-6">
+            <br> 
+                <h1 class="about_text">Pourquoi <b>Tunisie Booking</b>?</h1>
+                 <br><br>   
+                <p class="lorem_text" style="font-size:medium">Booking Tunisie ou aussi connue par Tunisie Booking est une agence de voyage basée à Hammamet permettant de réserver des hôtels Tozeur, Djerba, Sousse et Hammamet à prix pas cher.
+
+La réservation est simple, il suffit de sélectionner la date de début et la date de fin ainsi que les dates souhaitées du séjour et l'hôtel préféré, que ce soit un hôtel Hammamet ou un hôtel Djerba. 
+Nous sommes également spécialisés dans l'organisation des voyages pour les groupes et dans les réservations d'hôtels dans le monde avec possibilité de payer sur des plusieurs tranches.</p>
+                
+                
+
+              
+            </div>
+        </div>
+    </div>
+</div>
+ 
+ <br>
+
+<div class="container-fluid padding">
+    <div class="row welcome text-center">
+        <div class="col-12">
+            <h1 class="text-info black">highlights </h1>
+            <hr class="bg-info" style="width: 40%; font-size: medium; margin: 10px auto;">
+        </div>
+
+        <div class="col-12">
+            <p class="lead"style="font-size:medium">Notre agence de réservation d'hôtels en Tunisie vous recommande l'agence Teamcar qui vous offre les meilleurs services de location de véhicules à Tunis, Hammamet et Enfidha.</p>
+        </div>
+    </div>
+</div>
+<!--cardssss-->
+<!-- Card content -->
+<section class="p-5">
+    <div class="container">
+        <div class="row text-center g-4">
+            <div class="col-md">
+                <div class="card bg-secondary ">
+                    <div class="card-body text-center">
+
+                       
+                        <h3 class="card-title mb-3" style="color: black;">Vols</h3> <hr class="light" style="padding-left: 82px;">
+                        <p class="card-text">
+                           click here to see the vols
+                        </p><br> <br>
+                        <a href="{{ path('app_vols') }}" class="btn btn-dark" >Read More <i
+                                class="fi fi-br-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+           
+           <div class="col-md">
+                <div class="card bg-secondary ">
+                    <div class="card-body text-center">
+                       
+                        <h3 class="card-title mb-3" style="color: black;">participate</h3> <hr class="light" style="padding-left: 82px;">
+                        <p class="card-text">
+                       click here to fill out the form
+                        </p>
+                        <br><br>
+                        <a href="{{ path('app_contact') }}" class="btn btn-dark" >Read More <i
+                                class="fi fi-br-arrow-right"></i></a> 
+                    </div>
+                </div>
+            </div>
+            
+             <div class="col-md">
+                <div class="card bg-secondary ">
+                    <div class="card-body text-center">
+                       
+                        <h3 class="card-title mb-3" style="color: black;">Contact us</h3> <hr class="light" style="padding-left: 82px;">
+                        <p class="card-text">
+                            If you have a problem click here to contact us
+                        </p>
+                        <br><br>
+                        <a href="{{ path('app_contact') }}" class="btn btn-dark" >Read More <i
+                                class="fi fi-br-arrow-right"></i></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Three column Section-->
+{% block footer %}
+{{ include('include/footer.html.twig') }}
+{% endblock %}
+</footer>
+<style>
+    /* Your existing CSS styles */
+
+    .site-footer {
+        background-color: #26272b;
+        padding: 45px 0 20px;
+        font-size: 15px;
+        line-height: 24px;
+        color: #737373;
+    }
+
+    
+
+
+
+
+</body>
+
+
+</html>

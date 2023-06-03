@@ -1,0 +1,28 @@
+.limitTextHeight {
+    height: 20px;
+    overflow: hidden;
+}
+
+/* Align the image to the left */
+.col-md-6:first-child {
+    order: 3;
+}
+
+/* Set the maximum width of the image to 100% of its container */
+.col-md-6:first-child img {
+    max-width: 100%;
+}
+
+/* Set the minimum height of the text column to match the image height */
+.col-md-6:last-child {
+    min-height: calc(100% - 3rem);
+    /* adjust the value based on your needs */
+}
+
+.about_section {
+    width: 100%;
+    float: left;
+    background-color: #f2f7fd;
+    height: auto;
+    padding-bottom: 90px;
+}

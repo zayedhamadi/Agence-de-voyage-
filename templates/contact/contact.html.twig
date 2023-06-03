@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>{% block title %}Contact!{% endblock %}</title>
+{% block stylesheets %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+
+  <link defer href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <!-- fontawesome. !-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+
+  <!--fontawesome !-->
+  <script src="https://kit.fontawesome.com/85b7f242dd.js" crossorigin="anonymous"></script>
+
+
+  <!--fontawesome !-->
+  <script src="https://kit.fontawesome.com/85b7f242dd.js" crossorigin="anonymous"></script>
+
+  <!--bootstrap js !-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  
+<link rel="stylesheet" href="{{ asset('assets/Contact.css') }}"></head> 
+{{ include('include/header.html.twig') }}
+
+{% endblock %}
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="text-primary text-uppercase">// Contact Us //</h6>
+            <h1 class="mb-5">Contact For Any Query</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-12">
+                <div class="row gy-4">
+                    <div class="col-md-4">
+                        <div class="bg-light d-flex flex-column justify-content-center p-4">
+                            <h5 class="text-uppercase">// Booking //</h5>
+                            <p class="m-0" style="text-align: center;"><i
+                                    class="fa fa-envelope-open text-primary me-2"></i>book@example.com</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="bg-light d-flex flex-column justify-content-center p-4">
+                            <h5 class="text-uppercase">// General //</h5>
+                            <p class="m-0" style="text-align: center;"><i
+                                    class="fa fa-envelope-open text-primary me-2"></i>info@example.com</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="bg-light d-flex flex-column justify-content-center p-4">
+                            <h5 class="text-uppercase">// Technical //</h5>
+                            <p class="m-0" style="text-align: center;"><i
+                                    class="fa fa-envelope-open text-primary me-2"></i>tech@example.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<br>
+<!--  contact section -->
+<div class="body_bg layout_padding" style="background-size: cover; background-image: url({{ asset('images/body_bg.jpg') }}); padding: 60px 0;">
+
+
+    <!-- Contact Start -->
+    <section class="contact_section">
+        <div class="container">
+            <div class="heading_container">
+                <h2 class="text-info">Let's Get In Touch!</h2>
+                <hr class="bg-info">
+            </div>
+        </div>
+        <div class="container contact_bg layout_padding2-top">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact_form ">
+                        <form action="">
+                            <input type="text" placeholder="Name ">
+                            <input type="email" placeholder="Email">
+                            <input type="text" placeholder="Message" class="message_input">
+                            <button>
+                                Send
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="img-box">
+        <img src="{{ asset('images/contact-img.jpg') }}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="map-container">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25543.4541903517!2d10.176950634765616!3d36.84410999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd34c6f564f3bb%3A0x66c9d5884270c81!2sLow%20Cost%20Tunis%3A%20Agence%20de%20voyages!5e0!3m2!1sfr!2stn!4v1685098685571!5m2!1sfr!2stn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div><footer class="footer">
+{% block footer %}
+{{ include('include/footer.html.twig') }}
+{% endblock %}
+</footer>
+<style>
+    /* Your existing CSS styles */
+
+    .site-footer {
+        background-color: #26272b;
+        padding: 45px 0 20px;
+        font-size: 15px;
+        line-height: 24px;
+        color: #737373;
+    }

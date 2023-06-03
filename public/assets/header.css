@@ -1,0 +1,29 @@
+nav {
+    height: 100%;
+}
+
+.carousel-inner img {
+    width: 100%;
+
+
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0%;
+    transform: translateY(-60%);
+}
+
+.carousel-caption h1 {
+
+    text-transform: uppercase;
+    text-shadow: 1px 1px 15px #0000;
+    color: black;
+}
+
+.carousel-caption h3 {
+    font-size: 200%;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: burlywood;
+}
